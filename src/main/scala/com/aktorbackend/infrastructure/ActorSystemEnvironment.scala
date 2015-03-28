@@ -6,11 +6,8 @@ import akka.routing._
 import com.typesafe.config.ConfigFactory
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
-import java.util.concurrent.TimeUnit
-import akka.util.Timeout
 
 object ActorSystemEnvironment {
-  implicit val timeout = Timeout(500, TimeUnit.MILLISECONDS)
   var actorSystem:ActorSystem = null
   val frontName = "frontBalancer"
   val workerName = "workerBalancer"
