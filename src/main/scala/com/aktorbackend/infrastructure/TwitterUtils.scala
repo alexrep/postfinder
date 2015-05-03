@@ -1,4 +1,6 @@
 package com.aktorbackend.infrastructure
+
+import com.aktorbackend.models.Post
 import org.apache.http.client.HttpClient
 import org.apache.http.impl.client.DefaultHttpClient
 import org.apache.http.client.methods.HttpGet

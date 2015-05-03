@@ -2,6 +2,7 @@ package com.aktorbackend.infrastructure
 import akka.actor._
 import akka.actor.{ActorRef, Actor}
 import akka.pattern.{ ask, pipe, AskTimeoutException }
+import com.aktorbackend.models.{Tag, Post}
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 

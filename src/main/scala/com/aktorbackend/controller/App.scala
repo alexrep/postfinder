@@ -1,6 +1,7 @@
 package com.aktorbackend.controller
 
 import com.aktorbackend.infrastructure._
+import com.aktorbackend.models.Post
 import com.typesafe.play.mini._
 import play.api.libs.json._
 import scala.concurrent.ExecutionContext.Implicits.global
@@ -14,7 +15,7 @@ object App extends Application {
 
   implicit val locationWrites = new Writes[Post] {
     def writes(post: Post) = Json.obj(
-      "title" -> "Some title",
+      "userName" -> post.userName,
       "text" -> post.text
     )
   }

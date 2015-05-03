@@ -1,4 +1,4 @@
-package com.aktorbackend.infrastructure
+package com.aktorbackend.models
 
 /**
  * Created by alex on 27.03.15.

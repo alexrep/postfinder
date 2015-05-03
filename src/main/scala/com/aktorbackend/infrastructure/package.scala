@@ -8,7 +8,7 @@ import akka.util.Timeout
  * Created by alex on 28.03.15.
  */
 package object infrastructure {
-  implicit val timeout = Timeout(500, TimeUnit.MILLISECONDS)
+  implicit val timeout = Timeout(50000, TimeUnit.MILLISECONDS)
 
 
 }

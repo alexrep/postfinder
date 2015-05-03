@@ -3,6 +3,7 @@ package com.aktorbackend.infrastructure
 import akka.actor._
 import akka.pattern.{ ask, pipe, AskTimeoutException }
 import akka.routing._
+import com.aktorbackend.models.{Tag, Post}
 import com.typesafe.config.ConfigFactory
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future

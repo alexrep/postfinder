@@ -24,6 +24,8 @@ object AktorBackendBuild extends Build with ConfigureScalaBuild {
         "oauth.signpost" % "signpost-commonshttp4" % "1.2",
         "org.apache.httpcomponents" % "httpclient" % "4.2",
         "commons-io" % "commons-io" % "2.3",
+        "org.facebook4j" % "facebook4j-core" % "2.2.2",
+
         "org.specs2" %% "specs2" % "1.13" % "test" exclude("org.scala-stm", "scala-stm_2.10.0"),
         "org.eclipse.jetty" % "jetty-distribution" % "8.0.0.M2" % "test" exclude("org.scala-stm", "scala-stm_2.10.0")
       )
