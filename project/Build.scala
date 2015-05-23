@@ -15,9 +15,9 @@ object AktorBackendBuild extends Build with ConfigureScalaBuild {
     )
     .settings(
       libraryDependencies ++= Seq(
-        "com.typesafe.akka" %% "akka-actor" % "2.1.0" exclude("org.scala-stm", "scala-stm_2.10.0"),
-        "com.typesafe.akka" %% "akka-remote" % "2.1.0" exclude("org.scala-stm", "scala-stm_2.10.0"),
-        "com.typesafe.akka" %% "akka-agent" % "2.1.0" exclude("org.scala-stm", "scala-stm_2.10.0"),
+        "com.typesafe.akka" %% "akka-actor" % "2.1.0" ,
+        "com.typesafe.akka" %% "akka-remote" % "2.1.0" ,
+        "com.typesafe.akka" %% "akka-agent" % "2.1.0",
         //"com.h2database" % "h2" % "1.2.127",
         //"org.squeryl" % "squeryl_2.10.0-RC5" % "0.9.5-5",
         "oauth.signpost" % "signpost-core" % "1.2",
@@ -26,8 +26,8 @@ object AktorBackendBuild extends Build with ConfigureScalaBuild {
         "commons-io" % "commons-io" % "2.3",
         "org.facebook4j" % "facebook4j-core" % "2.2.2",
 
-        "org.specs2" %% "specs2" % "1.13" % "test" exclude("org.scala-stm", "scala-stm_2.10.0"),
-        "org.eclipse.jetty" % "jetty-distribution" % "8.0.0.M2" % "test" exclude("org.scala-stm", "scala-stm_2.10.0")
+        "org.specs2" %% "specs2" % "1.13" % "test" ,
+        "org.eclipse.jetty" % "jetty-distribution" % "8.0.0.M2" % "test"
       )
     )
 }
